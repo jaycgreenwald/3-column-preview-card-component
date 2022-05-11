@@ -30,7 +30,7 @@ body {
 }
 
 .card__vehicle-type {
-    padding: 49px 50px;
+    padding: 50px 56px 49px 48px;
     background-color: hsl(31, 77%, 52%);
 }
 
@@ -80,15 +80,24 @@ body {
 }
 
 .btn__learn {
+    display: inline-block;
     border: none;
     color: hsl(31, 77%, 52%);
     background-color: hsl(0, 0%, 95%);
     font-family: "Lexend Deca", sans-serif;
     font-weight: 400;
     font-size: 1rem;
+    border: 2px solid hsl(0, 0%, 95%);
     border-radius: 25px;
     padding: 14px 30px;
-    margin-top: 25px;
+    margin: 25px 0 0 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn__learn:hover {
+    background-color:hsla(0, 0%, 95%, 0);
+    color: hsl(0, 0%, 95%);
 }
 
 .btn__learn--dark-cyan {
@@ -97,4 +106,27 @@ body {
 
 .btn__learn--very-dark-cyan {
     color: hsl(179, 100%, 13%);
+}
+
+@media screen and (min-width: 921px) {
+    .card {
+        width: 920px;
+        display: flex;
+    }
+    
+    .card__vehicle-type {
+        flex-basis: 33.3%;
+    }
+
+    .card__vehicle-type:first-child {
+        border-radius: 9px 0 0 9px;
+    }
+    
+    .card__vehicle-type:last-child {
+        border-radius: 0 9px 9px 0;
+    }
+
+    .btn__learn {
+        margin-top: 84px;
+    }
 }
