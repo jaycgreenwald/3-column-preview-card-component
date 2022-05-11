@@ -108,6 +108,15 @@ body {
     color: hsl(179, 100%, 13%);
 }
 
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
 @media screen and (min-width: 921px) {
     .card {
         width: 920px;

@@ -16,8 +16,6 @@ This is a solution to the [3-column preview card component challenge on Frontend
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -29,22 +27,24 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./screenshot.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://jaycgreenwald.github.io/3-column-preview-card-component/
+- GitHub URL: https://github.com/jaycgreenwald/3-column-preview-card-component
 
 ## My process
+
+- Same as before - start with mobile design. 
+- Review Slack to see what feedback others have received about this project.
+- Measure in Illustrator.
+- Create class names
+- Style CSS
+- Test/compare with design
+- Move on to desktop version and repeat
+- Research topics as needed (such as using buttons vs. links).
 
 ### Built with
 
@@ -52,9 +52,6 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 ### What I learned
 
@@ -62,7 +59,7 @@ I used the :first-child and :last-child pseudo classes for the first time. I use
 
 ```css
 .card__vehicle-type:first-child {
-    border-top-left-radius: 9px;
+  border-top-left-radius: 9px;
     border-top-right-radius: 9px;
 }
 ```
@@ -71,31 +68,32 @@ I also used modifiers for the first time with my BEM class names. Assuming I did
 
 ```html
 <section class="card__vehicle-type card__vehicle-type--dark-cyan">
-```
+  ```
+
+  Lastly, I used flex-basis for the first time. I employed it to make each vehicle type section the same width.
+
+  ```css
+      .card__vehicle-type {
+        flex-basis: 33.3%;
+    }
+  ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- I need to continue to use Flexbox - getting a feel for it but still a long way to go.
+- Looking to try out Grid soon too.
+- Even more stuff I haven't even discovered yet!
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Buttons vs. Links](https://css-tricks.com/buttons-vs-links/) - I read somewhere that links were preferred over buttons, but wanted to learn more. I found this CSS-Tricks article. Straight and to the point.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Jason Greenwald](https://github.com/jaycgreenwald)
+- Frontend Mentor - [@jaycgreenwald](https://www.frontendmentor.io/profile/jaycgreenwald)
+- Twitter - [@jaycgreenwald](https://www.twitter.com/jaycgreenwald)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Hat tip to all of the fine people providing feedback on Slack. It is invaluable.
